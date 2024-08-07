@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 번호 조회</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>휴대폰 번호 조회</h1>
+        <form id="phone-form">
+            <input type="tel" id="phone-number" placeholder="휴대폰 번호 입력" required>
+            <button type="submit">확인</button>
+        </form>
+        <div class="output">
+            <div class="output-item">
+                <label for="test-number">TEST 번호:</label>
+                <input type="text" id="test-number" readonly>
+            </div>
+            <div class="output-item">
+                <label for="rx-code">RX 코드:</label>
+                <input type="text" id="rx-code" readonly>
+                <button id="copy-rx" disabled>복사</button>
+            </div>
+            <div class="output-item">
+                <label for="tx-code">TX 코드:</label>
+                <input type="text" id="tx-code" readonly>
+                <button id="copy-tx" disabled>복사</button>
+            </div>
+        </div>
+        <p id="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
